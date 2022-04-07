@@ -1,0 +1,27 @@
+controller_frequency: 20.0
+TrajectoryPlannerROS:
+  max_vel_x: 0.30
+  min_vel_x: 0.10
+  max_rotational_vel: 1.5
+  min_in_place_rotational_vel: 1.0
+  acc_lim_th: 0.75
+  acc_lim_x: 0.50
+  acc_lim_y: 0.50
+  escape_vel: -0.2 #後退速度
+
+  holonomic_robot: false
+  yaw_goal_tolerance: 0.78
+  xy_goal_tolerance: 0.15 #終點xy位置的容許誤差
+  goal_distance_bias: 0.8
+  path_distance_bias: 0.6
+  sim_time: 1.5 #預估未來多少時間內的軌跡
+  heading_lookahead: 0.325 #預估多少公尺以外的路徑規劃
+  oscillation_reset_dist: 0.05
+  pdist_scale: 0.3 #全局路徑權重(path)
+  gdist_scale: 2.0 #全局規劃權重(goal)
+  occdist_scale: 0.1 #避障權重
+
+  vx_samples: 13
+  vtheta_samples: 20
+  dwa: false #true(DWA) false(Trajectory Rollout)
+

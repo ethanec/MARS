@@ -1,0 +1,8 @@
+prefix=/home/yc/Lab506_ws/devel
+
+Name: tm_gazebo
+Description: Description of tm_gazebo
+Version: 1.1.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

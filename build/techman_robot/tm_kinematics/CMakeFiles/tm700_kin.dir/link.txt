@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libtm700_kin.so -o /home/yc/Lab506_ws/devel/lib/libtm700_kin.so CMakeFiles/tm700_kin.dir/src/tm_kin.cpp.o 

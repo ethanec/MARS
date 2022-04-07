@@ -1,0 +1,17 @@
+
+<launch>
+
+ 
+
+<!--node name="amcl" pkg="amcl" type="amcl" output="screen"/-->
+
+  <!--- Run move_base with parameters -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/testing_costmap_common.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/testing_costmap_common.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/testing_local_costmap.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/testing_global_costmap.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/testing_move_base1.yaml" command="load" />
+  </node>
+<!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find p3dx_navigation)/config/p3dx_rosaria/navigation.rviz" /-->
+</launch>

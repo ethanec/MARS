@@ -1,0 +1,8 @@
+prefix=/home/yc/Lab506_ws/devel
+
+Name: tm_kinematics
+Description: Description of tm_kinematics
+Version: 0.0.0
+Cflags: -I/home/yc/Lab506_ws/src/techman_robot/tm_kinematics/include
+Libs: -L${prefix}/lib -ltm700_kin -ltm900_kin -ltm700_moveit_plugin -ltm900_moveit_plugin -ltm1100_kin -ltm1300_kin -ltm1100_moveit_plugin -ltm1300_moveit_plugin
+Requires: roscpp geometry_msgs moveit_core moveit_ros_planning pluginlib tf_conversions

@@ -1,0 +1,8 @@
+prefix=/home/yc/Lab506_ws/install
+
+Name: tm_driver
+Description: Description of tm_driver
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp actionlib control_msgs geometry_msgs sensor_msgs hardware_interface controller_manager
